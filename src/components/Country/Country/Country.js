@@ -43,8 +43,8 @@ const Country = () => {
       {/* Country About and country News start */}
       <div>
         <div className="countryMenu">
-          <button onClick={() => setNewsShow(false)}>Country About</button>
-          <button onClick={() => setNewsShow(true)}>News</button>
+          <button className={`${!newsShow && 'countryMenuActive'}`} onClick={() => setNewsShow(false)}>Country About</button>
+          <button className={`${newsShow && 'countryMenuActive'}`} onClick={() => setNewsShow(true)}>News</button>
         </div>
         {!newsShow ? (
           <div className="container pb-4">
