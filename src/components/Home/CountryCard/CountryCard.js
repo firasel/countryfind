@@ -9,17 +9,17 @@ const CountryCard = ({ countryData }) => {
     <div className="col mb-5">
       <div className="countryCard card">
         <div className="card-body">
-          <h4>{countryData.name}</h4>
-          {countryData.capitalCity !== "" && (
+          <h4>{countryData?.name}</h4>
+          {countryData?.capitalCity !== "" && (
             <p>
-              Capital City: <span>{countryData.capitalCity}</span>
+              Capital City: <span>{countryData?.capitalCity}</span>
             </p>
           )}
         </div>
         <div className="card-footer">
           <button
             className="btn"
-            onClick={() => history.push(`/${countryData.iso2Code}`)}
+            onClick={() => history.push(`/${countryData?.iso2Code}`)}
           >
             See All Details
           </button>

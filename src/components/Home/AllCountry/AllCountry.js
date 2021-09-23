@@ -38,7 +38,7 @@ const AllCountry = () => {
           .find((word) => word === e.target.value.toLowerCase());
       });
       setAllCountryData(searchData);
-      searchData.length === 0 ? setSearchFound(true) : setSearchFound(false);
+      searchData?.length === 0 ? setSearchFound(true) : setSearchFound(false);
     }
   };
 
