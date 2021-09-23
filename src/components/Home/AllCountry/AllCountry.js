@@ -80,7 +80,7 @@ const AllCountry = () => {
             </div>
           )}
 
-          {allCountryData.map((data) => (
+          {allCountryData?.map((data) => (
             <CountryCard key={data.id} countryData={data} />
           ))}
         </div>

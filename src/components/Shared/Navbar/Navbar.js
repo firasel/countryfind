@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="container">
         <div className="d-flex justify-content-between align-items-center w-100">
           <div className="navbar-brand navbarTitle" onClick={()=>history.push('/home')}>
-            <span>C</span>ountry Find
+            <span>C</span>ountry Finds
           </div>
           <button
             className="navbar-toggler togglerBtn menuToggleBtn"

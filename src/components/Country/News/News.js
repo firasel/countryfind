@@ -31,7 +31,7 @@ const News = ({ countryCode }) => {
 
       {/* The News will show if found news data after API calling */}
       {allNews?.length !== 0 &&
-        allNews.map((data, index) => <NewsCard key={index} newsData={data} />)}
+        allNews?.map((data, index) => <NewsCard key={index} newsData={data} />)}
 
       {/* It will show if no news is received after the API call */}
       {!isLoading && allNews?.length === 0 && (
