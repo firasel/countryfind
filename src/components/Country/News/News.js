@@ -6,14 +6,20 @@ import "./News.css";
 const News = ({ countryCode }) => {
   const [allNews, setAllNews] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [isDataFound, setIsDataFound] = useState(false);
 
   // API call for news data only one country
   useEffect(() => {
     setIsLoading(true);
-    fetch(
-      `https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=1d1324fef2124ed187895300a5127710`
-    )
-      .then((res) => res.json())
+    fetch(`https://api-countryfinds.herokuapp.com/news/${countryCode}`)
+      .then((res) => {
+        if (res.status === 200) {
+          setIsDataFound(true);
+        } else {
+          setIsDataFound(false);
+        }
+        return res.json();
+      })
       .then((data) => {
         setAllNews(data.articles);
         setIsLoading(false);
@@ -34,7 +40,7 @@ const News = ({ countryCode }) => {
         allNews?.map((data, index) => <NewsCard key={index} newsData={data} />)}
 
       {/* It will show if no news is received after the API call */}
-      {!isLoading && allNews?.length === 0 && (
+      {!isLoading && isDataFound && (
         <div className="col-12">
           <h4 className="mb-5 text-center text-danger errMsg">
             No news found in This Country
