@@ -2,6 +2,8 @@
 
 # [Live View](https://countryfinds.netlify.app/)
 
+# [Backend Code Repository](https://github.com/firasel/countryfindbackend)
+
 ## Features
 
 - You can search any country
@@ -32,10 +34,10 @@ https://api.worldbank.org/v2/country/CountryCode?format=json
 
 ### For One Country News:
 
-It's return array of objects for country all news
+It's return an array of objects for the country all news or if not found news data then return an error
 
 ```sh
-https://newsapi.org/v2/top-headlines?country=CountryCode&apiKey=API_KEY
+https://api-countryfinds.herokuapp.com/news/CountryCode
 ```
 
 ### For Country Flag:
