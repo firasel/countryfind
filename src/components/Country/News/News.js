@@ -34,7 +34,7 @@ const News = ({ countryCode }) => {
         allNews?.map((data, index) => <NewsCard key={index} newsData={data} />)}
 
       {/* It will show if no news is received after the API call */}
-      {!isLoading && allNews?.length === 0 && (
+      {allNews?.length === 0 && !isLoading && (
         <div className="col-12">
           <h4 className="mb-5 text-center text-danger errMsg">
             No news found in This Country
