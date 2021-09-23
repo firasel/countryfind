@@ -6,7 +6,7 @@ import "./News.css";
 const News = ({ countryCode }) => {
   const [allNews, setAllNews] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [isDataFound,setIsDataFound] = useState(false);
+  const [isDataFound, setIsDataFound] = useState(false);
 
   // API call for news data only one country
   useEffect(() => {
@@ -40,7 +40,7 @@ const News = ({ countryCode }) => {
         allNews?.map((data, index) => <NewsCard key={index} newsData={data} />)}
 
       {/* It will show if no news is received after the API call */}
-      { !isLoading && isDataFound && (
+      {!isLoading && isDataFound && (
         <div className="col-12">
           <h4 className="mb-5 text-center text-danger errMsg">
             No news found in This Country
