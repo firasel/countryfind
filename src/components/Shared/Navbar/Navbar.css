@@ -1,0 +1,30 @@
+.navbarTitle {
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #050545 !important;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.navbarTitle span {
+  font-weight: 800;
+  font-family: cursive;
+  padding: 5px 10px;
+  background-color: #0cc;
+  border-radius: 3px;
+  margin-right: 3px;
+}
+.navbarLink {
+  padding: 5px;
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.navbarLink:hover {
+  background-color: #dcdcdc;
+  border-radius: 5px;
+}
+.menuToggleBtn {
+  border: 0;
+  box-shadow: none !important;
+  outline: none !important;
+}

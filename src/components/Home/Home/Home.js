@@ -1,13 +1,12 @@
-import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import React from "react";
+import AllCountry from "../AllCountry/AllCountry";
 
 const Home = () => {
-    return (
-        <div>
-            <Navbar/>
-            This is Home Page
-        </div>
-    );
+  return (
+    <>
+      <AllCountry />
+    </>
+  );
 };
 
 export default Home;

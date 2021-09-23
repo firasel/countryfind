@@ -1,0 +1,22 @@
+.errMsg {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 575px) and (min-width: 280px) {
+  .errMsg {
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .errMsg {
+    height: 20vh;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .errMsg {
+    height: 30vh;
+  }
+}

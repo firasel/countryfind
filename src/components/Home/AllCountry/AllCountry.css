@@ -1,0 +1,78 @@
+.searchContainer {
+  width: 30%;
+}
+.searchContainer input {
+  border: 2px solid #050546;
+  border-radius: 5px;
+  outline: none;
+  color: #050546;
+  font-weight: 500;
+}
+.searchContainer input::placeholder {
+  color: #050546;
+  text-align: center;
+}
+.searchContainer button {
+  background-color: #01cbca;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 0px 5px 5px 0px;
+  transition: all 0.2s;
+}
+.searchContainer button:hover {
+  background-color: #00b9b9;
+  color: white;
+  transition: all 0.3s;
+}
+.heroTitle {
+  text-align: center;
+}
+.heroTitle h3 {
+  color: #01cbca;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+.heroTitle p {
+  color: rgb(15, 15, 15);
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.countryPrent {
+  background-color: #01cbca1c;
+}
+.notFoundParent {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px) {
+  .searchContainer button {
+    font-size: 18px;
+  }
+  .heroTitle h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .heroTitle p {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .searchContainer {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 576px) {
+  .searchContainer {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 575px) and (min-width: 280px) {
+  .searchContainer {
+    width: 80%;
+  }
+}

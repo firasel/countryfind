@@ -1,0 +1,63 @@
+.countryCard {
+  margin: 2rem 3rem;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  text-align: center;
+  height: 100%;
+  background: #050545;
+  color: white;
+  transition: all 0.3s;
+}
+.countryCard:hover {
+  box-shadow: 0rem 0.5rem 1.3rem rgb(5 5 67) !important;
+  transition: all 0.5s;
+}
+.countryCard h4 {
+  margin-top: 1.5rem;
+}
+.countryCard p {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.countryCard p span {
+  font-weight: 500;
+}
+.countryCard button {
+  background: #01cbca;
+  color: white;
+  font-weight: 600;
+  font-family: Arial;
+  font-size: 1.1rem;
+  margin-bottom: 1.3rem;
+  transition: all 0.3s;
+}
+.countryCard button:hover {
+  background-color: #00b9b9;
+  color: white;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .countryCard {
+    margin: 1.3rem 1.5rem;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .countryCard {
+    margin: 1.3rem 1rem;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 575px) {
+  .countryCard {
+    margin: 1.3rem 1.5rem;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 576px) and (min-width: 280px) {
+  .countryCard {
+    margin: 0.3rem 0rem;
+    padding: 10px;
+  }
+}

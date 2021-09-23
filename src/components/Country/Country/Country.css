@@ -1,0 +1,58 @@
+.countryDetail {
+  font-size: 18px;
+  font-weight: 600;
+}
+.countryDetail span {
+  font-weight: 700;
+}
+.countryFlag {
+  padding: 0 20rem;
+}
+.countryMenu {
+  text-align: center;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.countryMenu button {
+  background-color: #01cbca;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  padding: 10px 0px;
+  transition: all 0.2s;
+}
+.countryMenu button:hover {
+  background-color: #00b9b9;
+  color: white;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .countryFlag {
+    padding: 0 15rem;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .countryFlag {
+    padding: 0 12rem;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .countryFlag {
+    padding: 0 8rem;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 575px) {
+  .countryFlag {
+    padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 576px) and (min-width: 280px) {
+  .countryFlag {
+    padding: 0 1rem;
+  }
+}
