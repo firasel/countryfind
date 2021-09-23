@@ -6,12 +6,13 @@ import "./News.css";
 const News = ({ countryCode }) => {
   const [allNews, setAllNews] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  console.log(process.env.NEWS_API_KEY);
 
   // API call for news data only one country
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      `https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=1d1324fef2124ed187895300a5127710`
+      `https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=${process.env.NEWS_API_KEY}`
     )
       .then((res) => res.json())
       .then((data) => {
