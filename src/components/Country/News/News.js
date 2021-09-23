@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import Loading from "../../Shared/Loading/Loading";
 import NewsCard from "../NewsCard/NewsCard";
 import "./News.css";
+require('dotenv').config();
 
 const News = ({ countryCode }) => {
   const [allNews, setAllNews] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const apiKey = '1d1324fef2124ed187895300a5127710'
+  const apiKey = process.env.REACT_APP_NEWS_API_KEY;
 
   // API call for news data only one country
   useEffect(() => {
@@ -19,7 +20,7 @@ const News = ({ countryCode }) => {
         setAllNews(data.articles);
         setIsLoading(false);
       });
-  }, [countryCode]);
+  }, [countryCode,apiKey]);
 
   return (
     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-0 m-0 mt-3 mt-md-4">
