@@ -25,10 +25,9 @@
   padding: 10px 0px;
   transition: all 0.2s;
 }
-.countryMenu button:hover {
-  background-color: #00b9b9;
-  color: white;
-  transition: all 0.4s;
+.countryMenuActive {
+  background-color: #00b9b9 !important;
+  color: white !important;
 }
 
 @media screen and (max-width: 1400px) and (min-width: 1200px) {
